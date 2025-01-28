@@ -8,7 +8,8 @@ function adicionarAmigo() {
 
         addarrayamigos(nomeamigo);
         limparInputAmigo();
-        listaramigos(nomeamigo)
+        listaramigos(nomeamigo);
+        limparListas("resultado");
        
     } else {
         alert("Digite um nome válido!");
@@ -32,12 +33,15 @@ function listaramigos(novoamigo){
 }
 
 function sortearAmigo(){
-
+  
     let qtd = listadeamigos.length;
 
     if (qtd > 2) {
         let amigosorteado = Math.floor(Math.random() * listadeamigos.length);
-        document.getElementById("resultado").insertAdjacentHTML("beforeend","Opa "+listadeamigos[amigosorteado]);
+        document.getElementById("resultado").insertAdjacentHTML("beforeend","O amigo sorteado é: "+listadeamigos[amigosorteado]);
+        listadeamigos = [];
+        limparListas("listaAmigos");
+        
     } else {
         alert("É necessário no minimo 3 nomes para fazer o sorteio!");
     }
@@ -45,3 +49,8 @@ function sortearAmigo(){
     
 }
 
+function limparListas(tag) {
+ 
+    let lista = document.getElementById(tag);
+    lista.replaceChildren();
+}
