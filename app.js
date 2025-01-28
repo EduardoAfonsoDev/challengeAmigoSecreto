@@ -8,6 +8,7 @@ function adicionarAmigo() {
 
         addarrayamigos(nomeamigo);
         limparInputAmigo();
+        listaramigos(nomeamigo)
        
     } else {
         alert("Digite um nome válido!");
@@ -22,4 +23,10 @@ function addarrayamigos(novoamigo) {
 function limparInputAmigo() {
     chute = document.querySelector('input');
     chute.value = '';
+}
+
+
+function listaramigos(novoamigo){
+    document.getElementById("listaAmigos").insertAdjacentHTML("beforeend", '<li>' + novoamigo +'</li>');
+
 }
