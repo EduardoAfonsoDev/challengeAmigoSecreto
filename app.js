@@ -7,7 +7,7 @@ function adicionarAmigo() {
     if (nomeamigo != '') {
 
         addarrayamigos(nomeamigo);
-        console.log(listadeamigos);
+        limparInputAmigo();
        
     } else {
         alert("Digite um nome válido!");
@@ -17,4 +17,9 @@ function adicionarAmigo() {
 
 function addarrayamigos(novoamigo) {
     listadeamigos.push(novoamigo);
+}
+
+function limparInputAmigo() {
+    chute = document.querySelector('input');
+    chute.value = '';
 }
