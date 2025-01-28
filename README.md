@@ -5,7 +5,7 @@
 
 ![image](https://github.com/user-attachments/assets/34bad8fc-b8c5-434e-98ce-e4c4752ae702)
 
-### Após adicionar os nomes clique em sortear amigo
+### Após adicionar os nomes clique em `sortear amigo`
 ![image](https://github.com/user-attachments/assets/3b8afb58-be9d-49bc-a016-4bfe6b9a62c1)
 
 ### Nome sorteado!!!
