@@ -30,3 +30,18 @@ function listaramigos(novoamigo){
     document.getElementById("listaAmigos").insertAdjacentHTML("beforeend", '<li>' + novoamigo +'</li>');
 
 }
+
+function sortearAmigo(){
+
+    let qtd = listadeamigos.length;
+
+    if (qtd > 2) {
+        let amigosorteado = Math.floor(Math.random() * listadeamigos.length);
+        document.getElementById("resultado").insertAdjacentHTML("beforeend","Opa "+listadeamigos[amigosorteado]);
+    } else {
+        alert("É necessário no minimo 3 nomes para fazer o sorteio!");
+    }
+
+    
+}
+
