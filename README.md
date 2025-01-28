@@ -1,5 +1,5 @@
-### 1° Clone o projeto no seu direótio
-### 2° execute o projeto no navegador utilizando a index.html
+### 1° Clone o projeto no seu diretório
+### 2° execute o projeto no navegador utilizando a `index.html`
 ### 3° Adicione no minimo 3 nomes para que o código permita fazer um sorteio
 
 
